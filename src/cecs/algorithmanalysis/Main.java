@@ -16,14 +16,14 @@ public class Main {
 
     public static void main(String[] args) {
         //Integer Test
-        int[] intTestSize = {100000, 250000, 500000, 1000000, 2000000, 10000000};
-        TestInsertionSort is = new TestInsertionSort(intTestSize);
-        TestShellSort ss = new TestShellSort(intTestSize);
-        TestQuickSort qs = new TestQuickSort(intTestSize);
-        TestRadixSort rs = new TestRadixSort(intTestSize);
+        Integer[] intTestSize = {100000, 250000, 500000, 1000000, 2000000, 10000000};
+        //TestInsertionSort is = new TestInsertionSort(intTestSize);
+        TestShellSort<Integer> ss = new TestShellSort<Integer>(Integer[].class, intTestSize);
+        //TestQuickSort qs = new TestQuickSort(intTestSize);
+        //TestRadixSort rs = new TestRadixSort(intTestSize);
 
         //Float test
-        float[] floatTestSize =  {100000, 250000, 500000, 1000000, 2000000, 10000000};
+        //int[] floatTestSize =  {100000, 250000, 500000, 1000000, 2000000, 10000000};
 
         //String test
 

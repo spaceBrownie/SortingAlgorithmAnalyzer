@@ -1,12 +1,12 @@
 package cecs.algorithmanalysis;
 
-public abstract class Sort {
+public abstract class Sort<T> {
     long startTime;
     long stopTime;
 
-    public  void reverseSort(int[] arr) {
+    public void reverseSort(T[] arr) {
         for (int i = 0; i < arr.length / 2; i++) {
-            int temp = arr[i];
+            T temp = arr[i];
             arr[i] = arr[arr.length - 1 - i];
             arr[arr.length - 1 - i] = temp;
         }

@@ -1,8 +1,8 @@
 package cecs.algorithmanalysis;
 
-public class ShellSort extends Sort {
+public class ShellSort<T extends Comparable<T>> extends Sort {
     /* function to sort arr using shellSort */
-    public void sort(int arr[])
+    public void sort(T arr[])
     {
         int n = arr.length;
         super.setStartTime();
@@ -18,12 +18,12 @@ public class ShellSort extends Sort {
                 // add a[i] to the elements that have been gap
                 // sorted save a[i] in temp and make a hole at
                 // position i
-                int temp = arr[i];
+                T temp = arr[i];
 
                 // shift earlier gap-sorted elements up until
                 // the correct location for a[i] is found
                 int j;
-                for (j = i; j >= gap && arr[j - gap] > temp; j -= gap)
+                for (j = i; j >= gap && (arr[j - gap]).compareTo(temp) > 0; j -= gap)
                     arr[j] = arr[j - gap];
 
                 // put temp (the original a[i]) in its correct

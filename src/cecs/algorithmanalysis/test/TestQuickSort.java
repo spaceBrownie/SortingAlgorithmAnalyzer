@@ -4,7 +4,7 @@ import cecs.algorithmanalysis.QuickSort;
 
 public class TestQuickSort {
     public TestQuickSort(int[] arr) {
-        int itr = 0;
+        /*int itr = 0;
         QuickSort qs = new QuickSort();
         System.out.print("\nQuick Sort:");
         while(itr < arr.length) {
@@ -28,6 +28,6 @@ public class TestQuickSort {
             System.out.print("\t");
             qs.getElapsedTime();
             ++itr;
-        }
+        }*/
     }
 }

@@ -4,6 +4,7 @@ import cecs.algorithmanalysis.RandomNumberGenerator;
 
 public class TestRadixSort {
     public TestRadixSort(int[] arr) {
+        /*
         int itr = 0;
         RadixSort rs = new RadixSort();
         System.out.println("\nRadix Sort:");
@@ -24,5 +25,6 @@ public class TestRadixSort {
             rs.getElapsedTime();
             ++itr;
         }
+        */
     }
 }
